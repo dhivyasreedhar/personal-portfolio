@@ -4,7 +4,7 @@
   "description": "Minimal Mistakes Jekyll theme npm build scripts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "https://github.com/dhivyasreedhar/dhivya.sreedhar.github.io.git"
   },
   "keywords": [
     "jekyll",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/mmistakes/minimal-mistakes/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "https://dhivya.sreedhar.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -28,6 +28,9 @@
   "scripts": {
     "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+     "build:js": "npm run uglify"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
